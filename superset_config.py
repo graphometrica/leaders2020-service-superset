@@ -102,4 +102,10 @@ LANGUAGES = {
     "ru": {"flag": "ru", "name": "Russian"},
 }
 
-APP_ICON = "/app/superset/static/assets/images/superset-logo-zkh.png"
+APP_ICON = "/app/superset/superset-logo-zkh.png"
+
+# EXCEL_EXTENSIONS = {"xlsx", "xls"}
+CSV_EXTENSIONS = {"csv", "tsv", "txt"}
+ALLOWED_EXTENSIONS = {*CSV_EXTENSIONS}
+
+CSV_EXPORT = {"encoding": "utf-8"}
