@@ -95,11 +95,17 @@ try:
 except ImportError:
     logger.info("Using default Docker config...")
 
-BABEL_DEFAULT_LOCALE = "ru"
+BABEL_DEFAULT_LOCALE = "en"
 
 LANGUAGES = {
-        "en": {"flag": "us", "name": "English"},
-        "ru": {"flag": "ru", "name": "Russian"},
-        }
+    "en": {"flag": "us", "name": "English"},
+    "ru": {"flag": "ru", "name": "Russian"},
+}
 
-APP_ICON = "static/assets/images/superset-logo-zkh.png"
+APP_ICON = "/app/superset/static/assets/images/superset-logo-zkh.png"
+
+EXCEL_EXTENSIONS = {"xlsx", "xls"}
+CSV_EXTENSIONS = {"csv", "tsv", "txt"}
+ALLOWED_EXTENSIONS = {*EXCEL_EXTENSIONS, *CSV_EXTENSIONS}
+
+CSV_EXPORT = {"encoding": "utf-8"}
