@@ -102,10 +102,13 @@ LANGUAGES = {
     "ru": {"flag": "ru", "name": "Russian"},
 }
 
-APP_ICON = "/app/superset/superset-logo-zkh.png"
+# APP_ICON = "/app/superset/superset-logo-zkh.png"
 
-# EXCEL_EXTENSIONS = {"xlsx", "xls"}
+EXCEL_EXTENSIONS = {"xlsx", "xls"}
 CSV_EXTENSIONS = {"csv", "tsv", "txt"}
-ALLOWED_EXTENSIONS = {*CSV_EXTENSIONS}
+ALLOWED_EXTENSIONS = {*CSV_EXTENSIONS, *EXCEL_EXTENSIONS}
 
 CSV_EXPORT = {"encoding": "utf-8"}
+
+LOGO_TARGET_PATH = "/dashboard/list"
+WEBDRIVER_TYPE = "chrome"
