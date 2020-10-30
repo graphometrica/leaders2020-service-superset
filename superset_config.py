@@ -104,8 +104,8 @@ LANGUAGES = {
 
 APP_ICON = "/app/superset/static/assets/images/superset-logo-zkh.png"
 
-EXCEL_EXTENSIONS = {"xlsx", "xls"}
+# EXCEL_EXTENSIONS = {"xlsx", "xls"}
 CSV_EXTENSIONS = {"csv", "tsv", "txt"}
-ALLOWED_EXTENSIONS = {*EXCEL_EXTENSIONS, *CSV_EXTENSIONS}
+ALLOWED_EXTENSIONS = {*CSV_EXTENSIONS}
 
 CSV_EXPORT = {"encoding": "utf-8"}
