@@ -52,14 +52,15 @@ DATABASE_PORT = get_env_variable("DATABASE_PORT")
 DATABASE_DB = get_env_variable("DATABASE_DB")
 
 # The SQLAlchemy connection string.
-SQLALCHEMY_DATABASE_URI = "%s://%s:%s@%s:%s/%s" % (
-    DATABASE_DIALECT,
-    DATABASE_USER,
-    DATABASE_PASSWORD,
-    DATABASE_HOST,
-    DATABASE_PORT,
-    DATABASE_DB,
-)
+#SQLALCHEMY_DATABASE_URI = "%s://%s:%s@%s:%s/%s" % (
+#    DATABASE_DIALECT,
+#    DATABASE_USER,
+#    DATABASE_PASSWORD,
+#    DATABASE_HOST,
+#    DATABASE_PORT,
+#    DATABASE_DB,
+#)
+SQLALCHEMY_DATABASE_URI = "postgresql://graph:graph@23.251.145.120:5432/superset"
 
 REDIS_HOST = get_env_variable("REDIS_HOST")
 REDIS_PORT = get_env_variable("REDIS_PORT")
