@@ -113,3 +113,10 @@ CSV_EXPORT = {"encoding": "utf-8"}
 
 LOGO_TARGET_PATH = "/welcome"
 WEBDRIVER_TYPE = "chrome"
+
+CACHE_CONFIG = {
+    'CACHE_TYPE': 'redis',
+    'CACHE_DEFAULT_TIMEOUT': 60 * 60 * 12,
+    'CACHE_KEY_PREFIX': 'superset_results',
+    'CACHE_REDIS_URL': 'redis://23.251.145.120:6379/0',
+}
