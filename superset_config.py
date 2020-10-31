@@ -110,5 +110,5 @@ ALLOWED_EXTENSIONS = {*CSV_EXTENSIONS, *EXCEL_EXTENSIONS}
 
 CSV_EXPORT = {"encoding": "utf-8"}
 
-LOGO_TARGET_PATH = "/dashboard/list"
+LOGO_TARGET_PATH = "/welcome"
 WEBDRIVER_TYPE = "chrome"
